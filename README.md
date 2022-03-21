@@ -1,12 +1,12 @@
 # Web Programming Project
 Team members:
 
-Hänninen, Nenna-Leena
+- Hänninen Nenna-Leena
 
-Moisanen, Taija
+- Moisanen Taija
 
-Rahman, Md Ashiquer
+- Rahman Md Ashiquer
 
-Rijal, Rajat
+- Rijal Rajat
 
-Zhang, Yingzhi
+- Zhang Yingzhi
