@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <!-- Registration modal -->
+    <!-- Registration Modal -->
     <div class="registerModal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
@@ -63,14 +63,42 @@
                 <button type="submit" class="registerbtn">Register</button>
             </form>
 
-            <div class="signin">
-                <p>Already have an account? <a href="#">Sign in</a>.</p>
+            <div class="signIn">
+                <p>Already have an account?</p>
+                <p id="signInLink">Sign In</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div class="signInModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <form action="/" method="GET" class="modal-form" id="form">
+                <h1>Sign In</h1>
+                <hr>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                <hr>
+                <button type="submit" class="registerbtn">Sign In</button>
+            </form>
+
+            <div class="signIn">
+                <p>Don't have an account?</p>
+                <p id="registerLink">Register</p>
             </div>
 
         </div>
     </div>
 
     <script src="./js/registerModal.js"></script>
+    <script src="./js/signInModal.js"></script>
 
 </body>
 </html>
