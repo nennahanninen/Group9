@@ -1,5 +1,5 @@
 $("#signInLink").click(function(){
-    $(".registerModal").hide();
+    $(".signUpModal").hide();
     $(".signInModal").css("display", "block");
 });
 
@@ -13,7 +13,7 @@ $(document).click(function(e){
     }
 });
 
-$("#registerLink").click(function(){
+$("#signUpLink").click(function(){
     $(".signInModal").hide();
-    $(".registerModal").css("display", "block");
+    $(".signUpModal").css("display", "block");
 });

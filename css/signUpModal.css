@@ -1,4 +1,4 @@
-.registerModal {
+.signUpModal {
     position: fixed;
     z-index: 1;
     left: 0;
@@ -38,7 +38,7 @@ input[type=text], input[type=password] {
     background: white;
 }
   
-  input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password]:focus {
     background-color: #f1f1f1;
     outline: none;
     border-radius: 15px;
@@ -49,7 +49,7 @@ hr {
     margin-bottom: 30px;
 }
 
-.registerbtn {
+.btn {
     background-color: #ACDFD2;
     padding: 16px 20px;
     margin: 8px 0;
@@ -62,7 +62,7 @@ hr {
     font-size: 14px;
 }
   
-.registerbtn:hover {
+.btn:hover {
     opacity: 2;
 }
   

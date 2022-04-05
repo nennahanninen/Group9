@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <!-- Very simple header with logo and navigation just to demonstrate the functionality of the registration modal-->
+    <!-- Very simple header with logo and navigation just to demonstrate the functionality of the sign up modal-->
     <header>
         <div class="container">
 
@@ -22,7 +22,7 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#" id="register">Register</a></li>
+                    <li><a href="#" id="sign-up">Sign Up</a></li>
                     <li>
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="cart" viewBox="0 0 16 16">
@@ -36,12 +36,12 @@
         </div>
     </header>
 
-    <!-- Registration Modal -->
-    <div class="registerModal">
+    <!-- Sign Up Modal -->
+    <div class="signUpModal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <form action="/" method="GET" class="modal-form" id="form">
-                <h1>Registration form</h1>
+                <h1>Sign Up</h1>
                 <p>Fill this form to create an account!</p>
                 <hr>
                 
@@ -60,7 +60,7 @@
                 <label for="psw-repeat"><b>Repeat Password</b></label>
                 <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
                 <hr>
-                <button type="submit" class="registerbtn">Register</button>
+                <button type="submit" class="btn">Sign Up</button>
             </form>
 
             <div class="signIn">
@@ -86,18 +86,18 @@
                 <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
                 <hr>
-                <button type="submit" class="registerbtn">Sign In</button>
+                <button type="submit" class="btn">Sign In</button>
             </form>
 
             <div class="signIn">
                 <p>Don't have an account?</p>
-                <p id="registerLink">Register</p>
+                <p id="signUpLink">Sign Up</p>
             </div>
 
         </div>
     </div>
 
-    <script src="./js/registerModal.js"></script>
+    <script src="./js/signUpModal.js"></script>
     <script src="./js/signInModal.js"></script>
 
 </body>
