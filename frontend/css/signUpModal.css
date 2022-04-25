@@ -68,18 +68,18 @@ hr {
   
 .signIn {
     font-size: 18px;
+    color: #9CC1B4;
     display: flex;
     justify-content: center;
     align-content: space-between;
     font-weight: bold;
 }
 
-#signInLink {
-    color: #9CC1B4;
-    padding-left: 5px;
+.signIn > p {
+    padding-right: 5px;
 }
 
-#signInLink:hover {
+.signIn > a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
