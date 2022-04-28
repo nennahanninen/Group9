@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    background: radial-gradient(#fff, #D3F9EC, #9CC1B4);
+}
+
+.modal-form {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.account-logo {
+    width: 200px;
+    height: 200px;
+}
+
+hr {
+    border: 0.5px solid #9CC1B4;
+}
+
+.signUpModal {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.signInModal {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+form input {
+    width: 98%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: none;
+    border-radius: 13px;
+}
+
+.modal-content {
+    background: #D3F9EC;
+    margin: 5% auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    min-height: 400px;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+  
+form .btn:focus {
+    outline: none;
+}
+
+.signIn-section {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.the-link:hover {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #36C8CF;
+}

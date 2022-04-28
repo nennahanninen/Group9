@@ -1,4 +1,4 @@
-// Just for an example JavaScript array of books
+// Just for an example: JavaScript array of books
 
 export default {
     books: [

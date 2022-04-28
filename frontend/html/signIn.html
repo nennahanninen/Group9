@@ -17,41 +17,31 @@
   <body>
 
     <a href="/frontend/index.html" class="back-btn">&#10229; Back to home page</a>
-<!-- ----------SignUp------------- -->
-<div class="signUpModal">
+          
+<!-- ----------SignIn------------- -->
+<div class="signInModal">
   <div class="modal-content">
-      <form action="/" method="GET" class="modal-form" id="form">
-          <img class="account-logo" src="/images/Logo.png"/>
-          <h1 id="form-header">Sign Up</h1>
-          <p>Fill this form to create an account!</p>
+      <form action="/auth" method="post" class="modal-form" id="form">
+        <img class="account-logo" src="/images/Logo.png"/>
+        <h1>Sign In</h1>
           <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
-          <label for="name"><b>Name</b></label>
-          <input type="text" placeholder="Enter Name" name="name" id="name" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-          <label for="address"><b>Address</b></label>
-          <input type="text" placeholder="Enter Address" name="address" id="address" required>
-
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-          <hr>
-          <button type="submit" class="btn">Sign Up</button>
+            <hr>
+            <button type="submit" class="btn">Sign In</button>
       </form>
 
       <div class="signIn-section">
-          <p>Already have an account?</p>
-          <a class="the-link" href="./signIn.html">Sign In</a>
+        <p>Don't have an account?</p>
+        <a class="the-link" href="./signUp.html">Sign Up</a>
       </div>
 
   </div>
 </div>
-
     
 <!-- ---------------------Footer------------------- -->
 <div class="footer">
