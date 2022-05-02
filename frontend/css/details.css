@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    background: radial-gradient(#fff, #D3F9EC, #9CC1B4);
+}
+.pgallery-row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+}
+.img-fluid{
+    width: 200px;
+    height: auto; 
+    align-items: center;
+}
+ .pgallery-contents{
+   margin-right: 40%;
+   margin-left: 30px;
+   margin-top: 5%;
+   padding: auto;
+
+} 
+.pgallery-column-2-button{
+    margin-top: 15px;
+}
+.pgallery-column-2-button,#pgallery-button{
+    height: 30px;
+    width: auto;
+    color: white;
+    border:none;
+}
+.img-fluid :hover{
+    width: 400px;
+    height: auto;
+}
+.pgallery-column-1{
+    background-color: rgb(240, 231, 219);
+    padding: 20px;
+}
+.pgallery-row{
+    width: 90%;
+}
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 1240px) {
+
+} 
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution.
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+
+} 
+
+/*
+iPHONE 5 MEDIA QUERY
+iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { 
+
+  
+}
+
+
