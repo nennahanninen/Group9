@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>FeelTech</title>
-    <script type="module" src="/frontend/js/app.js"></script>
+    <script type="module" src="/frontend/js/cart.js"></script>
+    <link rel="stylesheet" href="/frontend/css/cart.css">
     <link rel="stylesheet" href="/frontend/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/frontend/css/signUp.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="styles">
@@ -18,31 +18,47 @@
 
     <a href="/" class="back-btn">&#10229; Back to home page</a>
           
-<!-- ----------SignIn------------- -->
-<div class="signInModal">
-  <div class="modal-content">
-      <form action="/auth" method="post" class="modal-form" id="form">
-        <img class="account-logo" src="/frontend/images/Logo.png"/>
-        <h1>Sign In</h1>
-          <hr>
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-            <hr>
-            <button type="submit" class="btn">Sign In</button>
-      </form>
-
-      <div class="signIn-section">
-        <p>Don't have an account?</p>
-        <a class="the-link" href="./signUp.html">Sign Up</a>
-      </div>
-
+<!-- ----------Cart------------- -->
+<section class="container content-section">
+  <b><h1 class="section-header">CART</h1></b>
+  <div class="cart-row">
+    <span class="cart-item cart-header cart-column">ITEMS</span>
+    <span class="cart-price cart-header cart-column">PRICE</span>
+    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
   </div>
-</div>
+
+  <div class="cart-items">
+
+    <div class="cart-item cart-column">
+      <img class="cart-item-image" src="" width="100" height="100">
+      <span class="cart-item-title"></span>
+  </div>
+  <span class="cart-price cart-column">$</span>
+  <div class="cart-quantity cart-column">
+
+      <input  class="cart-quantity-input" type="number" id="quantity" name="quantity"  min="1" max="5" value="1">
     
+      <button id="remove-btn" class="btnn btnn-danger" type="button">REMOVE</button>
+  </div>
+    
+  </div>
+  <div class="cart-total">
+    <strong class="cart-total-title">Total</strong>
+    <span  class="cart_total-price">0$</span>
+  </div>
+  <form action="/cart" method="POST">
+    <input
+      id="store_purchase_data"
+      name="store_purchase_data"
+      type="hidden"
+      class="store-purchase-input"
+    />
+    <div class="button-position">
+      <button class="btnn btnn-primary btnn-purchase" type="submit">PURCHASE</button>
+    </div>
+    
+    </form>
+</section>
 <!-- ---------------------Footer------------------- -->
 <div class="footer">
     <div class="container">

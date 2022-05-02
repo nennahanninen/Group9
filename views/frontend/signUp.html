@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>FeelTech</title>
-    <script type="module" src="/frontend/js/app.js"></script>
-    <link rel="stylesheet" href="/frontend/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/frontend/css/signUp.css" type="text/css">
+    <script type="module" src="./frontend/js/app.js"></script>
+    <link rel="stylesheet" href="./frontend/css/main.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="styles">
@@ -16,32 +15,41 @@
 
   <body>
 
-    <a href="/" class="back-btn">&#10229; Back to home page</a>
-          
-<!-- ----------SignIn------------- -->
-<div class="signInModal">
-  <div class="modal-content">
-      <form action="/auth" method="post" class="modal-form" id="form">
-        <img class="account-logo" src="/frontend/images/Logo.png"/>
-        <h1>Sign In</h1>
-          <hr>
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <!-- ----------Sign Up / Sign In------------- -->
+    <div class="sign-up">
+    <a href="http://localhost:3000" class="back-btn">&#10229; Back to home page</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="/frontend/images/Logo.png" alt="Header-Pic" width="50%" />
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick=""> Sign In </span>
+                <span onclick=""> Sign Up </span>
+                <hr id="indicator" />
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <form id="signInForm" name="myform">
+                  <input type="text" placeholder="Username" name="uname" />
+                  <span id="uname"></span>
+                  <input type="password" placeholder="Password" />
+                  <button type="submit" class="btn">Sign In</button>
+                  <a href="">Forgot password</a>
+                </form>
 
-            <hr>
-            <button type="submit" class="btn">Sign In</button>
-      </form>
-
-      <div class="signIn-section">
-        <p>Don't have an account?</p>
-        <a class="the-link" href="./signUp.html">Sign Up</a>
+                <form id="signUpForm">
+                  <input type="text" placeholder="Username" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button type="submit" class="btn" onclick="signUp()">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-  </div>
-</div>
+    </div>
     
 <!-- ---------------------Footer------------------- -->
 <div class="footer">
@@ -70,4 +78,28 @@
 </div>
 
   </body>
+  <script type="text/javascript">
+    function signUp() {
+      var name = $('#name').val();
+      var email = $('#email').val();
+      var password = $('#password').val();
+      ajax(name, email, password);
+    }
+    function ajax(name, email, password){
+      $.ajax({
+        async: true,
+        url: 'http://localhost:3000',
+        type: 'POST',
+        dataType:'text',
+        data:{
+          'name': name,
+          'email': email,
+          'pass': password
+        },
+        function (info){
+          console.log(info);
+        }
+      })
+    }
+  </script>
 </html>
