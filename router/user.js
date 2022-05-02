@@ -5,7 +5,7 @@ let router = express.Router()
 
 //register
 router.post('/reguser', (req, res, next) => {
-   
+   var user = req.body.user;
     res.send('reg ok!')
 })
 //login
